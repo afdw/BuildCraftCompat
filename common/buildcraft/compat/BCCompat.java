@@ -13,6 +13,7 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 import buildcraft.api.core.BCLog;
 
 import buildcraft.compat.module.forestry.CompatModuleForestry;
+import buildcraft.compat.module.forge.CompatModuleFE;
 import buildcraft.compat.module.theoneprobe.CompatModuleTheOneProbe;
 import buildcraft.compat.network.CompatGui;
 import buildcraft.core.BCCoreConfig;
@@ -86,6 +87,7 @@ public class BCCompat {
         // List of all modules
         offerAndPreInitModule(new CompatModuleForestry());
         offerAndPreInitModule(new CompatModuleTheOneProbe());
+        offerAndPreInitModule(new CompatModuleFE());
         // End of module list
     }
 
